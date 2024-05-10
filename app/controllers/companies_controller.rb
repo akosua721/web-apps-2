@@ -1,7 +1,6 @@
 class CompaniesController < ApplicationController
 
   def index
-
     # find all Company rows
     @companies = Company.all 
     # render companies/index view
@@ -16,6 +15,7 @@ class CompaniesController < ApplicationController
 
   def new
     # render view with new Company form
+    # render :template => "companies/new"
   end
 
   def create

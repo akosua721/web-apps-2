@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   get("bitcoins", :controller => "bitcoins", :action => "index")
   resources "companies"
   #get("/companies", :controller => "companies", :action => "index")
-  # resources "contacts"
-  get("/contacts", :controller => "contacts", :action => "index")
+  resources "contacts"
+  #get("/contacts", :controller => "contacts", :action => "index")
+  #get("/contacts/new", :controller => "contacts", :action => "new")
   resources "posts"
   # get("/posts", :controller => "posts", :action => "index")
 end
